@@ -1,0 +1,2 @@
+# JavaScriptProgrammingEx6
+Array
