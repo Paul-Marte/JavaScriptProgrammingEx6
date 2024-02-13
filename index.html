@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h3>Cars</h3>
+    <script>
+        document.write('<ul>');
+
+        for (let i = 0; i < cars.length; i++) {
+            document.write(`<li>${cars[i]}</li>`);
+        }
+
+        document.write('</ul>');
+
+        cars.push('Tacoma');
+
+        document.write('<ul>');
+
+        for (const c of cars) {
+            document.write(`<li>${c}</li>`);
+        }
+
+        document.write('</ul>');
+    </script>
+    <h3>Vehicle Makes</h3>
+    <script>
+        document.write('<ul>');
+
+        for (let i in makes) {
+            document.write(`<li>${makes[i]}</li>`);
+        }
+
+        document.write('</ul>');
+
+        makes.unshift('Chevrolet','Ford');
+
+        document.write('<ul>');
+
+        makes.forEach(m => {
+            document.write(`<li>${m}</li>`);
+        });
+
+        document.write('</ul>');
+    </script>
+    <h3>My Numbers</h3>
+    <script>
+        document.write('<ul>');
+
+        for (const n of myNumbers) {
+            document.write(`<li>${n}</li>`)
+        }
+
+        document.write('</ul>');
+
+        myNumbers.sort();
+
+        document.write('<ul>');
+
+        for (const n of myNumbers) {
+            document.write(`<li>${n}</li>`)
+        }
+
+        document.write('</ul>');
+        
+        //myNumbers.sort((a, b) => a - b); //sort numbers asc
+        myNumbers.sort((a, b) => b - a); // sort numbers desc
+
+        document.write('<ul>');
+
+        for (const n of myNumbers) {
+            document.write(`<li>${n}</li>`)
+        }
+
+        document.write('</ul>');
+    </script>
+     <h3>Things</h3>
+     <script>
+         let things = [2, 3.4, 'Chris', true, new Date()];
+ 
+         for (const thing of things) {
+             document.write(`<div>${thing}</div>`);
+         }
+     </script>
+</body>
+
+</html>
